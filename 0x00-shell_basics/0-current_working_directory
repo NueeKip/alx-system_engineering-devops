@@ -1,2 +1,2 @@
-#!/bin/bash
-echo "the PWD is : ${pwd}"
+#! /bin/sh
+echo "$(cd "$(dirname "$1")"; pwd -P)/$(basename "$1")"
